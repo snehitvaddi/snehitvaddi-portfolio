@@ -29,17 +29,22 @@ const shippedProducts = [
   { name: 'WhatsApp R2Park', url: 'https://github.com/snehitvaddi/whatsapp-r2park' },
 ]
 
-// Floating tech logos configuration with actual logo URLs
+// Floating tech logos configuration - spread across entire section
 const floatingLogos = [
-  { name: 'Python', x: '5%', y: '18%', delay: 0, size: 50, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png' },
-  { name: 'TensorFlow', x: '88%', y: '12%', delay: 0.5, size: 45, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/TensorFlow_logo.svg/1280px-TensorFlow_logo.svg.png' },
-  { name: 'AWS', x: '8%', y: '75%', delay: 1, size: 55, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/330px-Amazon_Web_Services_Logo.svg.png' },
-  { name: 'LangChain', x: '92%', y: '55%', delay: 1.5, size: 45, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/LangChain_Logo.svg/1280px-LangChain_Logo.svg.png' },
-  { name: 'Databricks', x: '12%', y: '45%', delay: 2, size: 50, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Databricks-logo.svg/3840px-Databricks-logo.svg.png' },
-  { name: 'OpenCV', x: '85%', y: '38%', delay: 2.5, size: 40, logo: 'https://opencv.org/wp-content/uploads/2020/07/OpenCV_logo_black-2.png' },
-  { name: 'Snowflake', x: '6%', y: '88%', delay: 3, size: 48, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Snowflake_Logo.svg/2560px-Snowflake_Logo.svg.png' },
-  { name: 'Vercel', x: '90%', y: '82%', delay: 3.5, size: 42, logo: 'https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png' },
-  { name: 'Docker', x: '75%', y: '25%', delay: 4, size: 48, logo: 'https://www.svgrepo.com/show/331370/docker.svg' },
+  // Left side
+  { name: 'Python', x: '5%', y: '15%', delay: 0, size: 45, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png' },
+  { name: 'AWS', x: '8%', y: '55%', delay: 1, size: 50, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/330px-Amazon_Web_Services_Logo.svg.png' },
+  { name: 'Snowflake', x: '4%', y: '85%', delay: 2, size: 42, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Snowflake_Logo.svg/2560px-Snowflake_Logo.svg.png' },
+  // Left-center
+  { name: 'Databricks', x: '18%', y: '35%', delay: 0.5, size: 44, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Databricks-logo.svg/3840px-Databricks-logo.svg.png' },
+  { name: 'PyTorch', x: '22%', y: '75%', delay: 1.5, size: 40, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/992px-PyTorch_logo_icon.svg.png' },
+  // Center-right
+  { name: 'Docker', x: '72%', y: '20%', delay: 2.5, size: 44, logo: 'https://www.svgrepo.com/show/331370/docker.svg' },
+  { name: 'OpenCV', x: '78%', y: '65%', delay: 3, size: 38, logo: 'https://opencv.org/wp-content/uploads/2020/07/OpenCV_logo_black-2.png' },
+  // Right side
+  { name: 'TensorFlow', x: '88%', y: '12%', delay: 0.8, size: 42, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/TensorFlow_logo.svg/1280px-TensorFlow_logo.svg.png' },
+  { name: 'LangChain', x: '92%', y: '45%', delay: 1.8, size: 42, logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/LangChain_Logo.svg/1280px-LangChain_Logo.svg.png' },
+  { name: 'Vercel', x: '90%', y: '78%', delay: 3.5, size: 40, logo: 'https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png' },
 ]
 
 export default function Hero() {
@@ -59,8 +64,8 @@ export default function Hero() {
           style={{ left: logo.x, top: logo.y }}
           initial={{ opacity: 0 }}
           animate={{
-            opacity: 0.12,
-            y: [0, -20, 0],
+            opacity: 0.22,
+            y: [0, -15, 0],
           }}
           transition={{
             opacity: { delay: logo.delay, duration: 1 },
