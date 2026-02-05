@@ -141,9 +141,8 @@ export default function Hero() {
           {/* Right Side - Description & CTA */}
           <motion.div variants={itemVariants} className="lg:col-span-1 order-3">
             <p className="text-gray-600 dark:text-gray-400 text-base lg:text-lg mb-8 leading-relaxed">
-              I build and ship AI products, from LLM apps to computer vision models.
-              My tools help thousands land jobs and discover hackathon projects.
-              Currently building AI agents for healthcare and productivity.
+              Currently shipping Agentic AI products in healthcare that touch millions of patients.
+              3.5+ years in Applied AI, Computer Vision, and Data Engineering.
             </p>
 
             <div className="flex flex-wrap gap-4">
