@@ -455,7 +455,7 @@ export const projects: Project[] = [
     id: 'resume2portfolio',
     title: 'Resume2Portfolio',
     description: 'Transform your resume into a beautiful portfolio website in minutes. No coding required.',
-    image: '/projects/resume2portfolio.png',
+    image: '/projects/resume2portfolio.jpg',
     tags: ['Next.js', 'AI', 'Automation', 'Portfolio'],
     demo: 'https://www.resume2portfolio.com/',
     stars: 0,
