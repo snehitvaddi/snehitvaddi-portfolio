@@ -1,0 +1,14 @@
+
+// Add these to your projects.ts file:
+// Replace the placeholder images with these local paths:
+
+// finetune-resume: image: '/projects/finetune-resume.png'
+// resume2portfolio: image: '/projects/resume2portfolio.png'
+// h1b-wage-finder: image: '/projects/h1b-wage-finder.png'
+// whatsapp-r2park: image: '/projects/whatsapp-r2park.png'
+// ai-influencer-bot: image: '/projects/ai-influencer-bot.png'
+// claude-code-agent: image: '/projects/claude-code-agent.png'
+// mcp-research-agent: image: '/projects/mcp-research-agent.png'
+// medhalt: image: '/projects/medhalt.png'
+// eat-or-nahh: image: '/projects/eat-or-nahh.png'
+// intruder-detection: image: '/projects/intruder-detection.png'
