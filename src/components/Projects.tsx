@@ -10,7 +10,6 @@ import { projects, categoryConfig, type Project } from '@/data/projects'
 const curatedProjectIds = [
   // Agentic AI (Hot & New)
   'ai-influencer-bot',
-  'claude-code-agent',
   'mcp-research-agent',
   // GenAI & LLMs
   'interview-gpt',
@@ -55,7 +54,6 @@ const recentProjectIds = [
   'whatsapp-r2park',
   // Agentic AI
   'ai-influencer-bot',
-  'claude-code-agent',
   'mcp-research-agent',
   // Recent GenAI
   'medhalt',

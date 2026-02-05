@@ -31,18 +31,6 @@ export const projects: Project[] = [
     status: 'live'
   },
   {
-    id: 'claude-code-agent',
-    title: 'Claude Code Portfolio Agent',
-    description: 'This portfolio was built entirely by an AI agent! Meta, right? Autonomous code generation with Claude.',
-    image: '/projects/claude-code-agent.png',
-    tags: ['Claude', 'Agentic AI', 'Meta', 'Next.js'],
-    stars: 0,
-    date: '2026',
-    featured: true,
-    category: 'agentic',
-    status: 'building'
-  },
-  {
     id: 'mcp-research-agent',
     title: 'MCP Research Agent',
     description: 'Building an MCP server for autonomous research - fetches papers, summarizes, and writes literature reviews.',
