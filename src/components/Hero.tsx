@@ -141,8 +141,8 @@ export default function Hero() {
           {/* Right Side - Description & CTA */}
           <motion.div variants={itemVariants} className="lg:col-span-1 order-3">
             <p className="text-gray-600 dark:text-gray-400 text-base lg:text-lg mb-8 leading-relaxed">
-              Currently building Agentic AI at ModMed, shipping products used by 5,000+ healthcare providers serving millions of patients.
-              From self-driving cars to medical AI to side projects helping thousands land jobs — I build things that work.
+              Currently building Agentic AI at ModMed, shipping products that touch millions of patients.
+              From self-driving cars to agriculture AI to resume optimizers — I build things that create real impact.
             </p>
 
             <div className="flex flex-wrap gap-4">
