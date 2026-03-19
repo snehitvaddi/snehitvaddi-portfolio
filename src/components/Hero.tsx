@@ -20,13 +20,13 @@ const itemVariants: Variants = {
   visible: { opacity: 1, y: 0 },
 }
 
-// Shipped products
+// Shipped products with taglines and accent colors
 const shippedProducts = [
-  { name: 'FineTune Resume', url: 'https://finetuneresume.app/' },
-  { name: 'Resume2Portfolio', url: 'https://www.resume2portfolio.com/' },
-  { name: 'H1B Wage Compass', url: 'https://h1b-wage-compass.streamlit.app/' },
-  { name: 'HackSwipe', url: 'https://hackswipe.vercel.app/' },
-  { name: 'WhatsApp R2Park', url: 'https://github.com/snehitvaddi/whatsapp-r2park' },
+  { name: 'AutoApply', tagline: 'AI Job Agent', url: 'https://github.com/snehitvaddi/AutoApply', emoji: '🤖', accent: 'hover:border-violet-400 hover:bg-violet-50 dark:hover:bg-violet-950/30' },
+  { name: 'FineTune Resume', tagline: 'AI Resume Tailor', url: 'https://finetuneresume.app/', emoji: '📄', accent: 'hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/30' },
+  { name: 'Resume2Portfolio', tagline: 'Portfolio Builder', url: 'https://www.resume2portfolio.com/', emoji: '🚀', accent: 'hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/30' },
+  { name: 'ReachPilot', tagline: 'Sales Outreach', url: 'https://github.com/snehitvaddi/ReachPilot', emoji: '📬', accent: 'hover:border-orange-400 hover:bg-orange-50 dark:hover:bg-orange-950/30' },
+  { name: 'H1B Wage Compass', tagline: 'Wage Finder', url: 'https://h1b-wage-compass.streamlit.app/', emoji: '💰', accent: 'hover:border-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/30' },
 ]
 
 // Floating tech logos configuration - spread across entire section
@@ -176,11 +176,11 @@ export default function Hero() {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="mt-16 lg:mt-24"
         >
-          <p className="text-center text-sm font-medium text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-8">
-            Products I've shipped, used by thousands
+          <p className="text-center text-sm font-medium text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-6">
+            Products I&apos;ve shipped
           </p>
 
-          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+          <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4">
             {shippedProducts.map((product, index) => (
               <motion.a
                 key={product.name}
@@ -190,11 +190,16 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9 + index * 0.1 }}
-                whileHover={{ scale: 1.05, y: -2 }}
-                className="group flex items-center gap-2 text-gray-400 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                whileHover={{ scale: 1.04, y: -3 }}
+                whileTap={{ scale: 0.97 }}
+                className={`group flex items-center gap-3 px-4 py-2.5 rounded-xl border border-gray-200/60 dark:border-gray-700/60 bg-white/60 dark:bg-gray-800/40 backdrop-blur-sm shadow-sm hover:shadow-md transition-all duration-200 ${product.accent}`}
               >
-                <span className="text-base md:text-lg font-medium">{product.name}</span>
-                <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <span className="text-lg">{product.emoji}</span>
+                <div className="flex flex-col">
+                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-200 leading-tight">{product.name}</span>
+                  <span className="text-[11px] text-gray-400 dark:text-gray-500 leading-tight">{product.tagline}</span>
+                </div>
+                <ExternalLink className="w-3.5 h-3.5 text-gray-300 dark:text-gray-600 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-colors ml-1" />
               </motion.a>
             ))}
           </div>
