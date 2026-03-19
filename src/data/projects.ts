@@ -18,31 +18,6 @@ export const projects: Project[] = [
   // 🤖 AGENTIC AI (New & Coming Soon)
   // ============================================
   {
-    id: 'autoapply',
-    title: 'AutoApply',
-    description: 'Autonomous job application agent — scouts LinkedIn, fills forms across 8+ ATS platforms using a 3-tier AI pipeline (AgentQL + Groq + Vision LLM). Self-learning field mapper that gets smarter with every application.',
-    image: '/projects/autoapply.png',
-    tags: ['Python', 'Playwright', 'AgentQL', 'Groq', 'Self-Learning'],
-    github: 'https://github.com/snehitvaddi/AutoApply',
-    stars: 0,
-    date: '2026',
-    featured: true,
-    category: 'agentic',
-    status: 'live'
-  },
-  {
-    id: 'reachpilot',
-    title: 'ReachPilot',
-    description: 'Automated Instagram outreach pipeline — discovers creators, screens profiles with GPT-4o vision, sends personalized DMs, and follows up automatically. Full real-time dashboard for campaign tracking.',
-    image: '/projects/reachpilot.png',
-    tags: ['Node.js', 'Playwright', 'GPT-4o Vision', 'Automation', 'Sales'],
-    stars: 0,
-    date: '2026',
-    featured: true,
-    category: 'agentic',
-    status: 'live'
-  },
-  {
     id: 'ai-influencer-bot',
     title: 'AI Influencer Bot',
     description: 'AI-powered social media bot that auto-posts AI news from HackerNews. Autonomous content curation and posting.',
@@ -466,27 +441,27 @@ export const projects: Project[] = [
   {
     id: 'finetune-resume',
     title: 'FineTune Resume',
-    description: 'Chrome extension + SaaS that tailors your resume to any job description using Claude AI. Paste a JD, get an ATS-optimized resume in seconds. Used by thousands of job seekers.',
+    description: 'AI-powered resume optimizer that tailors your resume to job descriptions. Used by thousands of job seekers.',
     image: '/projects/finetune-resume.png',
-    tags: ['Next.js', 'Chrome Extension', 'Claude API', 'Supabase', 'LaTeX'],
+    tags: ['Next.js', 'AI', 'LLM', 'Resume'],
     demo: 'https://finetuneresume.app/',
     stars: 0,
     date: '2025',
     featured: true,
-    category: 'agentic',
+    category: 'web',
     status: 'live'
   },
   {
     id: 'resume2portfolio',
     title: 'Resume2Portfolio',
-    description: 'AI SaaS that transforms resumes into portfolio websites in ~45 seconds. 616+ creators, 1,200+ portfolios generated. Multi-AI provider parsing with 4 professional templates.',
+    description: 'Transform your resume into a beautiful portfolio website in minutes. No coding required.',
     image: '/projects/resume2portfolio.jpg',
-    tags: ['Next.js', 'Supabase', 'OpenAI', 'PDF Processing', 'SaaS'],
+    tags: ['Next.js', 'AI', 'Automation', 'Portfolio'],
     demo: 'https://www.resume2portfolio.com/',
     stars: 0,
     date: '2025',
     featured: true,
-    category: 'agentic',
+    category: 'web',
     status: 'live'
   },
   {
@@ -582,6 +557,19 @@ export const projects: Project[] = [
     status: 'live'
   },
   {
+    id: 'whatsapp-r2park',
+    title: 'WhatsApp R2Park Bot',
+    description: 'WhatsApp bot integration for parking management. Automated notifications and reminders.',
+    image: 'https://placehold.co/600x400/25D366/ffffff?text=WhatsApp+Bot',
+    tags: ['JavaScript', 'WhatsApp API', 'Automation', 'Bot'],
+    github: 'https://github.com/snehitvaddi/whatsapp-r2park',
+    stars: 0,
+    date: '2026',
+    featured: false,
+    category: 'web',
+    status: 'live'
+  },
+  {
     id: 'headlands-pitch',
     title: 'HeadLands Pitch App',
     description: 'Application for the HeadLands accelerator program. Startup pitch deck and demo.',
@@ -620,6 +608,19 @@ export const projects: Project[] = [
     github: 'https://github.com/snehitvaddi/Google-Colab-Keep-Alive',
     stars: 1,
     date: '2023',
+    featured: false,
+    category: 'tools',
+    status: 'live'
+  },
+  {
+    id: 'finetune-resume',
+    title: 'Finetune Resume',
+    description: 'AI-powered resume optimization tool. Tailors your resume for specific job descriptions.',
+    image: 'https://placehold.co/600x400/8b5cf6/ffffff?text=Resume+AI',
+    tags: ['TypeScript', 'AI', 'Resume', 'Optimization'],
+    github: 'https://github.com/snehitvaddi/finetune-resume',
+    stars: 0,
+    date: '2026',
     featured: false,
     category: 'tools',
     status: 'live'
