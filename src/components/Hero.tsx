@@ -22,11 +22,11 @@ const itemVariants: Variants = {
 
 // Shipped products
 const shippedProducts = [
+  { name: 'AutoApply', url: 'https://github.com/snehitvaddi/AutoApply' },
   { name: 'FineTune Resume', url: 'https://finetuneresume.app/' },
   { name: 'Resume2Portfolio', url: 'https://www.resume2portfolio.com/' },
+  { name: 'ReachPilot', url: 'https://github.com/snehitvaddi/ReachPilot' },
   { name: 'H1B Wage Compass', url: 'https://h1b-wage-compass.streamlit.app/' },
-  { name: 'HackSwipe', url: 'https://hackswipe.vercel.app/' },
-  { name: 'WhatsApp R2Park', url: 'https://github.com/snehitvaddi/whatsapp-r2park' },
 ]
 
 // Floating tech logos configuration - spread across entire section
