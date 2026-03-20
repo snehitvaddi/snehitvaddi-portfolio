@@ -22,7 +22,7 @@ const itemVariants: Variants = {
 
 // Shipped products with taglines and accent colors
 const shippedProducts = [
-  { name: 'AutoApply', tagline: 'AI Job Agent', url: 'https://github.com/snehitvaddi/AutoApply', emoji: '🤖', accent: 'hover:border-violet-400 hover:bg-violet-50 dark:hover:bg-violet-950/30' },
+  { name: 'Apply Loop AI', tagline: 'AI Job Agent', url: 'https://applyloop.vercel.app/', emoji: '⚡', accent: 'hover:border-violet-400 hover:bg-violet-50 dark:hover:bg-violet-950/30' },
   { name: 'FineTune Resume', tagline: 'AI Resume Tailor', url: 'https://finetuneresume.app/', emoji: '📄', accent: 'hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/30' },
   { name: 'Resume2Portfolio', tagline: 'Portfolio Builder', url: 'https://www.resume2portfolio.com/', emoji: '🚀', accent: 'hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/30' },
   { name: 'ReachPilot', tagline: 'Sales Outreach', url: 'https://github.com/snehitvaddi/ReachPilot', emoji: '📬', accent: 'hover:border-orange-400 hover:bg-orange-50 dark:hover:bg-orange-950/30' },
