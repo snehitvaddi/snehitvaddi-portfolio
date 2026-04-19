@@ -98,7 +98,7 @@ function ProjectCard({ project }: { project: Project }) {
       className="group relative backdrop-blur-sm bg-white/80 dark:bg-gray-800/50 rounded-2xl overflow-hidden border border-gray-200/50 dark:border-gray-700/50 shadow-sm hover:shadow-xl transition-all duration-300"
     >
       {/* Image area */}
-      <div className={`relative h-44 overflow-hidden ${!hasRealImage ? `bg-gradient-to-br ${gradient}` : 'bg-gray-100 dark:bg-gray-800'}`}>
+      <div className={`relative h-28 sm:h-44 overflow-hidden ${!hasRealImage ? `bg-gradient-to-br ${gradient}` : 'bg-gray-100 dark:bg-gray-800'}`}>
         {hasRealImage ? (
           <Image
             src={project.image}
@@ -153,37 +153,42 @@ function ProjectCard({ project }: { project: Project }) {
       </div>
 
       {/* Content */}
-      <div className="p-5">
+      <div className="p-3 sm:p-5">
         {/* Category & Date */}
-        <div className="flex items-center justify-between mb-3">
-          <span className="text-xs font-medium px-2.5 py-1 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200/50 dark:border-gray-600/50">
+        <div className="flex items-center justify-between mb-2 sm:mb-3">
+          <span className="text-[10px] sm:text-xs font-medium px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200/50 dark:border-gray-600/50">
             {config.label}
           </span>
-          <span className="text-xs text-gray-500 dark:text-gray-400">{project.date}</span>
+          <span className="text-[10px] sm:text-xs text-gray-500 dark:text-gray-400">{project.date}</span>
         </div>
 
         {/* Title */}
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 line-clamp-1">
+        <h3 className="text-sm sm:text-lg font-semibold text-gray-900 dark:text-white mb-1 sm:mb-2 line-clamp-2 sm:line-clamp-1 leading-snug">
           {project.title}
         </h3>
 
-        {/* Description */}
-        <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
+        {/* Description — hidden on mobile for density */}
+        <p className="hidden sm:block text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
           {project.description}
         </p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-1.5">
-          {project.tags.slice(0, 3).map((tag) => (
+        <div className="flex flex-wrap gap-1 sm:gap-1.5 mt-2 sm:mt-0">
+          {project.tags.slice(0, 3).map((tag, i) => (
             <span
               key={tag}
-              className="px-2 py-1 text-xs font-medium bg-gray-50 dark:bg-gray-700/50 text-gray-500 dark:text-gray-400 rounded-md border border-gray-100 dark:border-gray-600/50"
+              className={`${i >= 2 ? 'hidden sm:inline-flex' : 'inline-flex'} px-1.5 sm:px-2 py-0.5 sm:py-1 text-[10px] sm:text-xs font-medium bg-gray-50 dark:bg-gray-700/50 text-gray-500 dark:text-gray-400 rounded-md border border-gray-100 dark:border-gray-600/50`}
             >
               {tag}
             </span>
           ))}
+          {project.tags.length > 2 && (
+            <span className="sm:hidden px-1.5 py-0.5 text-[10px] font-medium text-gray-400 dark:text-gray-500">
+              +{project.tags.length - 2}
+            </span>
+          )}
           {project.tags.length > 3 && (
-            <span className="px-2 py-1 text-xs font-medium text-gray-400 dark:text-gray-500">
+            <span className="hidden sm:inline-flex px-2 py-1 text-xs font-medium text-gray-400 dark:text-gray-500">
               +{project.tags.length - 3}
             </span>
           )}
@@ -265,7 +270,7 @@ export default function Projects() {
             initial="hidden"
             animate="visible"
             exit={{ opacity: 0 }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6"
           >
             {filteredProjects.map((project) => (
               <ProjectCard key={project.id} project={project} />

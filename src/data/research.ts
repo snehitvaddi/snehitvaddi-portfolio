@@ -32,15 +32,6 @@ export const publications: Publication[] = [
     tags: ['LLMs', 'Hallucination', 'Interpretability'],
   },
   {
-    id: 'ecoli-food-processing',
-    title:
-      'Detecting Escherichia coli on Conventional Food Processing Surfaces Using UV-C Fluorescence Imaging and Deep Learning',
-    venue: 'Applied Sciences',
-    year: 2026,
-    status: 'published',
-    tags: ['Computer Vision', 'Food Safety', 'UV-C Imaging'],
-  },
-  {
     id: 'ecoli-plants-leaf',
     title:
       'Detecting Escherichia coli Contamination on Plant Leaf Surfaces Using UV-C Fluorescence Imaging and Deep Learning',
@@ -48,15 +39,27 @@ export const publications: Publication[] = [
     year: 2025,
     status: 'published',
     firstAuthor: true,
-    relatedCount: 4,
+    relatedCount: 5,
+    link: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2qTPJ8UAAAAJ&sortby=pubdate&citation_for_view=2qTPJ8UAAAAJ:IjCSPb-OGe4C',
     tags: ['Computer Vision', 'YOLOv11', 'Agriculture', 'Food Safety'],
   },
   {
     id: 'pothole-classification',
-    title: 'An Effective Model for Pothole Classification and Admin Alerting System',
+    title:
+      'An Effective Model for Smartphone-Based Pothole Classification and Admin Alerting System',
     venue: 'IEEE ICCMST',
     year: 2023,
     status: 'published',
-    tags: ['Computer Vision', 'Classification', 'Edge AI'],
+    link: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2qTPJ8UAAAAJ&sortby=pubdate&citation_for_view=2qTPJ8UAAAAJ:d1gkVwhDpl0C',
+    tags: ['Computer Vision', 'Edge AI', 'Mobile'],
+  },
+  {
+    id: 'ecg-heart-attack',
+    title: 'ECG-Based Early Heart Attack Prediction Using Neural Networks',
+    venue: 'IEEE',
+    year: 2022,
+    status: 'published',
+    link: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2qTPJ8UAAAAJ&sortby=pubdate&citation_for_view=2qTPJ8UAAAAJ:u-x6o8ySG0sC',
+    tags: ['Healthcare AI', 'Neural Networks', 'Time Series', 'Cardiology'],
   },
 ]

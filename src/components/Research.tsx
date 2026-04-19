@@ -24,7 +24,7 @@ function PublicationCard({ pub }: { pub: Publication }) {
     <motion.article
       variants={itemVariants}
       whileHover={{ y: -4 }}
-      className="group relative backdrop-blur-sm bg-white/80 dark:bg-gray-800/50 rounded-2xl border border-gray-200/50 dark:border-gray-700/50 p-6 transition-all hover:shadow-lg hover:border-emerald-300/60 dark:hover:border-emerald-700/60"
+      className="group relative backdrop-blur-sm bg-white/80 dark:bg-gray-800/50 rounded-2xl border border-gray-200/50 dark:border-gray-700/50 p-4 sm:p-6 transition-all hover:shadow-lg hover:border-emerald-300/60 dark:hover:border-emerald-700/60"
     >
       {/* Meta row */}
       <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -53,7 +53,7 @@ function PublicationCard({ pub }: { pub: Publication }) {
       </div>
 
       {/* Title */}
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-white leading-snug mb-4">
+      <h3 className="text-sm sm:text-lg font-semibold text-gray-900 dark:text-white leading-snug mb-3 sm:mb-4">
         {pub.title}
       </h3>
 
@@ -128,7 +128,7 @@ export default function Research() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-80px' }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6"
         >
           {publications.map((pub) => (
             <PublicationCard key={pub.id} pub={pub} />
