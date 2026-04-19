@@ -60,9 +60,7 @@ export default function Header() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <motion.a
-              href="https://drive.google.com/file/d/1wpk_nt_bdIQnPol8ZaCdRIwL4EbyDD7W/view"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/resume"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-xl text-sm font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
@@ -104,9 +102,8 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href="https://drive.google.com/file/d/1wpk_nt_bdIQnPol8ZaCdRIwL4EbyDD7W/view"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/resume"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="block px-4 py-3 text-base font-medium text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-800 rounded-lg mt-4"
               >
                 View Resume

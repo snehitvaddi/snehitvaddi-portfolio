@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowLeft } from 'lucide-react'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Resume | Snehit Vaddi',
@@ -18,15 +18,32 @@ const RESUME_PATH = '/Snehit-Vaddi-Resume.pdf'
 export default function ResumePage() {
   return (
     <main className="h-screen flex flex-col bg-gray-100 dark:bg-gray-950">
-      {/* Top bar */}
+      {/* Top bar with branded logo */}
       <div className="shrink-0 backdrop-blur-md bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800">
-        <div className="px-4 sm:px-6 py-3 flex items-center justify-between">
+        <div className="px-4 sm:px-6 py-3">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 transition-colors"
+            className="group inline-flex items-center gap-3 rounded-full pr-4 py-1 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            aria-label="Back to Snehit Vaddi's portfolio"
           >
-            <ArrowLeft className="w-4 h-4" />
-            View full portfolio
+            <div className="relative w-9 h-9 rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-gray-700 group-hover:ring-gray-900 dark:group-hover:ring-white transition-all">
+              <Image
+                src="/profile.png"
+                alt="Snehit Vaddi"
+                fill
+                sizes="36px"
+                className="object-cover"
+                priority
+              />
+            </div>
+            <div className="flex flex-col leading-tight">
+              <span className="text-sm font-semibold text-gray-900 dark:text-white">
+                Snehit Vaddi
+              </span>
+              <span className="text-xs text-gray-500 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors">
+                ← View full portfolio
+              </span>
+            </div>
           </Link>
         </div>
       </div>
