@@ -34,7 +34,7 @@ export default function Footer() {
             <Heart className="w-4 h-4 text-red-500 fill-red-500" />
             <span>and</span>
             <Code2 className="w-4 h-4 text-blue-500" />
-            <span>by an AI agent (meta, right?)</span>
+            <span>by Snehit Vaddi</span>
           </motion.div>
 
           {/* Quick Links */}
