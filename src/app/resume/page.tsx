@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowLeft, Download, ExternalLink } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Resume | Snehit Vaddi',
@@ -26,28 +26,8 @@ export default function ResumePage() {
             className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span className="hidden sm:inline">Back to portfolio</span>
+            View full portfolio
           </Link>
-
-          <div className="flex items-center gap-2">
-            <a
-              href={RESUME_PATH}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-            >
-              <ExternalLink className="w-4 h-4" />
-              <span className="hidden sm:inline">Open in new tab</span>
-            </a>
-            <a
-              href={RESUME_PATH}
-              download="Snehit-Vaddi-Resume.pdf"
-              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100 rounded-lg transition-colors"
-            >
-              <Download className="w-4 h-4" />
-              Download
-            </a>
-          </div>
         </div>
       </div>
 
@@ -69,8 +49,7 @@ export default function ResumePage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg"
             >
-              <Download className="w-4 h-4" />
-              Download Resume
+              Open Resume
             </a>
           </div>
         </object>
