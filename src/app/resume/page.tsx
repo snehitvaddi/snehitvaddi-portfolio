@@ -3,14 +3,17 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Resume | Snehit Vaddi',
-  description: 'Resume of Snehit Vaddi — GenAI Engineer. 4+ years building AI, LLMs, and Computer Vision products.',
+  title: 'Resume',
+  description:
+    'Resume of Snehit Vaddi — GenAI Engineer building agentic AI and LLM systems for healthcare. Shipped clinical AI to 15,000+ providers.',
+  alternates: { canonical: 'https://snehitvaddi.com/resume' },
   openGraph: {
     title: 'Snehit Vaddi — Resume',
-    description: 'GenAI Engineer. 4+ years building AI products.',
-    type: 'website',
+    description: 'GenAI Engineer · Agentic AI for Healthcare · Production LLM Systems',
+    type: 'profile',
+    url: 'https://snehitvaddi.com/resume',
   },
-  robots: 'index, follow',
+  robots: { index: true, follow: true },
 }
 
 const RESUME_PATH = '/Snehit-Vaddi-Resume.pdf'
