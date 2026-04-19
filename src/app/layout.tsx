@@ -169,6 +169,39 @@ const personSchema = {
   sameAs: [
     'https://github.com/snehitvaddi',
     'https://linkedin.com/in/snehitvaddi',
+    'https://scholar.google.com/citations?user=2qTPJ8UAAAAJ&hl=en',
+  ],
+  subjectOf: [
+    {
+      '@type': 'ScholarlyArticle',
+      name: 'Can Small Models Reason About Legal Documents? A Comparative Study',
+      datePublished: '2026',
+      sameAs: 'https://arxiv.org/abs/2603.25944',
+    },
+    {
+      '@type': 'ScholarlyArticle',
+      name: 'Do Hallucination Neurons Generalize? Evidence from Cross-Domain Transfer in LLMs',
+      datePublished: '2026',
+    },
+    {
+      '@type': 'ScholarlyArticle',
+      name: 'Detecting E. coli on Conventional Food Processing Surfaces Using UV-C Fluorescence Imaging and Deep Learning',
+      datePublished: '2026',
+      isPartOf: 'Applied Sciences',
+    },
+    {
+      '@type': 'ScholarlyArticle',
+      name: 'Detecting E. coli Contamination on Plant Leaf Surfaces Using UV-C Fluorescence Imaging and Deep Learning',
+      datePublished: '2025',
+      isPartOf: 'Plants',
+      author: { '@type': 'Person', name: 'Snehit Vaddi' },
+    },
+    {
+      '@type': 'ScholarlyArticle',
+      name: 'An Effective Model for Pothole Classification and Admin Alerting System',
+      datePublished: '2023',
+      isPartOf: 'IEEE ICCMST',
+    },
   ],
   email: 'mailto:vaddisnehit@gmail.com',
   nationality: { '@type': 'Country', name: 'India' },
