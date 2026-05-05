@@ -32,6 +32,7 @@ const curatedProjectIds = [
   'eat-or-nahh',
   'hackswipe',
   'h1b-wage-finder',
+  'resume2portfolio',
   // Tools
   'colab-keep-alive',
   'sudoku-solver',
@@ -43,21 +44,19 @@ const curatedProjects = projects.filter(p => curatedProjectIds.includes(p.id))
 const categories = ['recent', 'all', ...Object.keys(categoryConfig)] as const
 type Category = typeof categories[number]
 
-// Recent projects - shipped products and recent work
+// Recent projects - shipped products and recent work (order is explicit)
 const recentProjectIds = [
-  // Shipped products
-  'finetune-resume',
   'resume2portfolio',
-  'h1b-wage-finder',
-  'hackswipe',
-  'whatsapp-r2park',
-  // Agentic AI
-  'ai-influencer-bot',
-  // Recent GenAI
   'medhalt',
+  'ai-influencer-bot',
   'rag-anything',
+  'hackswipe',
+  'h1b-wage-finder',
+  'whatsapp-r2park',
 ]
-const recentProjects = projects.filter(p => recentProjectIds.includes(p.id))
+const recentProjects = recentProjectIds
+  .map(id => projects.find(p => p.id === id))
+  .filter((p): p is Project => p !== undefined)
 
 const containerVariants = {
   hidden: { opacity: 0 },
