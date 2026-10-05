@@ -46,7 +46,7 @@ export default function Contact() {
             className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-full text-sm font-medium mb-6"
           >
             <Coffee className="w-4 h-4" />
-            Let's grab a virtual coffee
+            Get in touch
           </motion.div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
@@ -56,9 +56,7 @@ export default function Contact() {
           </h2>
 
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12">
-            I'm always excited to discuss AI, data engineering, or just tech in general.
-            Whether you have a project idea, job opportunity, or just want to say hi -
-            my inbox is open!
+            Reach out to discuss healthcare AI, model evaluation, research, or a project you are working on.
           </p>
 
           {/* Big CTA Button */}

@@ -52,7 +52,7 @@ export default function Footer() {
               Projects
             </a>
             <a
-              href="https://drive.google.com/file/d/1wpk_nt_bdIQnPol8ZaCdRIwL4EbyDD7W/view"
+              href="/resume"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"

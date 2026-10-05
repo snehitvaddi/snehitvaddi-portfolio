@@ -13,8 +13,25 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    id: 'oscar-health',
+    title: 'Forward Deployed AI Engineer',
+    company: 'Oscar Health',
+    companyUrl: 'https://www.hioscar.com',
+    location: 'New York, NY',
+    type: 'contract',
+    startDate: 'Jun 2026',
+    endDate: 'Present',
+    description: [
+      'Built an MCP code review server covering 900+ pull requests. It flags server-side violations, missing auth scopes, and prompt-injection risks, with Langfuse traces on every run. Reduced review time by 30% and caught 40+ compliance issues on its first day.',
+      'Built a Cube semantic layer over dbt, exposed through MCP with OAuth2 scopes, for natural-language queries over governed claims metrics. Evaluated answers against a 500-query golden set to catch metric drift.',
+      'Built multimodal extraction for 14,000+ provider contracts. Agents re-check source pages when validation fails or answers conflict, improving first-pass accuracy from 82% to 95%. A labeled evaluation set gates model and prompt changes.',
+      'Delivered plugins, MCP servers, and skills for legal, finance, and people teams, and rolled out Codex to engineering with admin policies and per-user usage tracking. Added Prometheus metrics, Langfuse traces, and PagerDuty escalation, bringing detection of degraded tool calls below 2 minutes.',
+    ],
+    technologies: ['MCP', 'Cube', 'dbt', 'OAuth2', 'Langfuse', 'LLM-as-Judge', 'Codex', 'Prometheus', 'PagerDuty'],
+  },
+  {
     id: 'modmed',
-    title: 'AI Engineer — GenAI Applications & LLM Systems',
+    title: 'AI Engineer, GenAI Applications & LLM Systems',
     company: 'ModMed',
     companyUrl: 'https://modmed.com',
     location: 'Boca Raton, FL (Remote)',
@@ -25,8 +42,8 @@ export const experiences: Experience[] = [
       'Shipped Clinical Ambient AI Scribe serving 15,000+ providers across 11 specialties (400K+ daily encounters), automating 70% of documentation via real-time transcription + LLM SOAP generation',
       'Built agentic document pipeline (OpenAI Agents SDK + fine-tuned Qwen2-VL VLM) routing 10M+ clinical pages/month, replacing a $400K/month vendor with a $20K in-house system (95% cost reduction)',
       'Built Text2SQL + clinical knowledge graph over ModMed’s EHR warehouse (200+ tables, pgvector embeddings), cutting analyst request volume by 60%',
-      'Architected production multi-agent RAG with LoRA-finetuned SLMs, hybrid pgvector + BM25 retrieval, and cross-encoder reranking — 94% retrieval precision across 50K+ clinical documents',
-      'Open-sourced MEDHALT — clinical hallucination detection (DeBERTa NER + LLM-as-judge) achieving 92% accuracy vs. GPT-4, with MLflow tracking and golden-set regression testing',
+      'Architected production multi-agent RAG with LoRA-finetuned SLMs, hybrid pgvector + BM25 retrieval, and cross-encoder reranking, achieving 94% retrieval precision across 50K+ clinical documents',
+      'Open-sourced MEDHALT for clinical hallucination detection (DeBERTa NER + LLM-as-judge) achieving 92% accuracy vs. GPT-4, with MLflow tracking and golden-set regression testing',
       'Shipped LangChain/LangGraph/Claude monitoring framework for Scribe quality, cutting incident response to under 5 minutes with PHI-safe pipelines and prompt-injection filtering',
     ],
     technologies: [
@@ -52,7 +69,7 @@ export const experiences: Experience[] = [
     description: [
       'Built LangGraph multi-agent RAG that autonomously resolved 65% of customer tickets across a 50K-doc knowledge base, with dynamic routing and LLM-as-judge scoring',
       'Built LLM-as-judge routing layer with dynamic few-shot prompting, improving helpfulness from 43% → 76% and relevance by 30%',
-      'Designed FAISS + keyword hybrid search with semantic reranking — 92% recall@10, serving 150+ concurrent users via vLLM with 40% p95 latency reduction',
+      'Designed FAISS + keyword hybrid search with semantic reranking, achieving 92% recall@10, serving 150+ concurrent users via vLLM with 40% p95 latency reduction',
       'Implemented Redis-backed multi-turn agent memory and FastAPI inference gateway with fallback logic and structured logging',
     ],
     technologies: ['LangGraph', 'FAISS', 'vLLM', 'Redis', 'FastAPI', 'LLM-as-Judge'],
@@ -83,10 +100,10 @@ export const experiences: Experience[] = [
     startDate: 'Jun 2021',
     endDate: 'Dec 2022',
     description: [
-      'Engineered BERT + XGBoost intent classifier (88% F1) predicting technician dispatch necessity — eliminated 12K unnecessary dispatches/year, saving $2M annually',
+      'Engineered BERT + XGBoost intent classifier (88% F1) predicting technician dispatch necessity. Eliminated 12K unnecessary dispatches/year, saving $2M annually',
       'Built Elasticsearch + Word2Vec anomaly detection for network telemetry, cutting diagnosis time by 40% and Tier-2 escalations by 25%',
       'Optimized PySpark / Delta Lake pipelines processing 1M+ logs/day (30% latency reduction); designed Azure Synapse warehouse with dbt',
-      'Built NLP ticket-categorization pipeline with fine-tuned BERT — 91% accuracy, 500K+ monthly interactions',
+      'Built NLP ticket-categorization pipeline with fine-tuned BERT, achieving 91% accuracy, 500K+ monthly interactions',
     ],
     technologies: [
       'Python',

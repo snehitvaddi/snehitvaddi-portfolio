@@ -166,7 +166,7 @@ function ProjectCard({ project }: { project: Project }) {
           {project.title}
         </h3>
 
-        {/* Description — hidden on mobile for density */}
+        {/* Description, hidden on mobile for density */}
         <p className="hidden sm:block text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
           {project.description}
         </p>
