@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'Snehit Vaddi — GenAI Engineer in Healthcare'
+export const alt = 'Snehit Vaddi, Forward Deployed AI Engineer at Oscar Health'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -20,7 +20,7 @@ export default async function OpengraphImage() {
           fontFamily: 'system-ui, -apple-system, sans-serif',
         }}
       >
-        {/* Top row — brand */}
+        {/* Top row: brand */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <div
             style={{
@@ -57,8 +57,8 @@ export default async function OpengraphImage() {
               maxWidth: 1000,
             }}
           >
-            GenAI Engineer shipping{' '}
-            <span style={{ color: '#60a5fa' }}>Healthcare AI</span> to production
+            Forward Deployed{' '}
+            <span style={{ color: '#60a5fa' }}>AI Engineer</span>
           </h1>
           <p
             style={{
@@ -69,11 +69,11 @@ export default async function OpengraphImage() {
               lineHeight: 1.4,
             }}
           >
-            Clinical LLMs · Agentic AI · RAG · HealthTech SaaS
+            Oscar Health · Claims analytics · Contract extraction · AI evaluation
           </p>
         </div>
 
-        {/* Bottom row — stats */}
+        {/* Bottom row: stats */}
         <div style={{ display: 'flex', gap: 48, alignItems: 'center' }}>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <span style={{ fontSize: 44, fontWeight: 800, color: '#ffffff' }}>15,000+</span>
@@ -83,16 +83,16 @@ export default async function OpengraphImage() {
           </div>
           <div style={{ width: 1, height: 50, background: '#334155' }} />
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span style={{ fontSize: 44, fontWeight: 800, color: '#ffffff' }}>600+</span>
+            <span style={{ fontSize: 44, fontWeight: 800, color: '#ffffff' }}>900+</span>
             <span style={{ fontSize: 18, color: '#94a3b8', marginTop: 4 }}>
-              GitHub stars
+              PRs covered at Oscar
             </span>
           </div>
           <div style={{ width: 1, height: 50, background: '#334155' }} />
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span style={{ fontSize: 44, fontWeight: 800, color: '#ffffff' }}>4+ yrs</span>
+            <span style={{ fontSize: 44, fontWeight: 800, color: '#ffffff' }}>5+ yrs</span>
             <span style={{ fontSize: 18, color: '#94a3b8', marginTop: 4 }}>
-              building production AI
+              data, ML, and AI
             </span>
           </div>
         </div>

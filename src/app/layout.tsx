@@ -9,15 +9,15 @@ const inter = Inter({
 
 const SITE_URL = 'https://snehitvaddi.com'
 const SITE_NAME = 'Snehit Vaddi'
-const TITLE = 'Snehit Vaddi | Building Agentic AI for Healthcare'
+const TITLE = 'Snehit Vaddi | Forward Deployed AI Engineer'
 const DESCRIPTION =
-  'GenAI Engineer building production AI and LLM systems for healthcare. Shipped clinical AI products serving 15,000+ providers — agentic AI, RAG pipelines, and HealthTech SaaS. 600+ GitHub stars, multiple AI/ML publications.'
+  'Forward Deployed AI Engineer at Oscar Health building code review tools, governed claims analytics, and provider contract extraction. Previously built clinical AI at ModMed for 15,000+ providers. Research in LLM reasoning and hallucination detection.'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: TITLE,
-    template: '%s | Snehit Vaddi — Agentic AI for Healthcare',
+    template: '%s | Snehit Vaddi',
   },
   description: DESCRIPTION,
   applicationName: SITE_NAME,
@@ -41,14 +41,13 @@ export const metadata: Metadata = {
     'RAG Engineer',
     'Generative AI Healthcare',
     'AI Product Engineer',
-    'ModMed AI Engineer',
+    'Oscar Health AI Engineer',
     'Ambient AI Scribe',
     'AI Engineer Healthcare SaaS',
     'AI Engineer USA',
     'Machine Learning Engineer',
     'Deep Learning Engineer',
     'Computer Vision Engineer',
-    'AI Influencer Healthcare',
   ],
   authors: [{ name: 'Snehit Vaddi', url: SITE_URL }],
   creator: 'Snehit Vaddi',
@@ -72,7 +71,7 @@ export const metadata: Metadata = {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Snehit Vaddi — GenAI Engineer in Healthcare',
+        alt: 'Snehit Vaddi, Forward Deployed AI Engineer at Oscar Health',
       },
     ],
   },
@@ -110,7 +109,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 }
 
-// JSON-LD structured data — the heavy lifting for Google Knowledge Panel & rich results
+// Structured profile data for search engines
 const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
@@ -119,13 +118,13 @@ const personSchema = {
   alternateName: ['Snehit', 'Vaddi Snehit'],
   url: SITE_URL,
   image: `${SITE_URL}/profile.png`,
-  jobTitle: 'GenAI Engineer',
+  jobTitle: 'Forward Deployed AI Engineer',
   description: DESCRIPTION,
   worksFor: {
     '@type': 'Organization',
-    name: 'ModMed',
-    url: 'https://www.modmed.com',
-    industry: 'Healthcare Technology',
+    name: 'Oscar Health',
+    url: 'https://www.hioscar.com',
+    industry: 'Health Insurance',
   },
   alumniOf: [
     {
@@ -159,7 +158,7 @@ const personSchema = {
   ],
   hasOccupation: {
     '@type': 'Occupation',
-    name: 'GenAI Engineer',
+    name: 'Forward Deployed AI Engineer',
     occupationLocation: {
       '@type': 'Country',
       name: 'United States',
@@ -182,6 +181,7 @@ const personSchema = {
       '@type': 'ScholarlyArticle',
       name: 'Do Hallucination Neurons Generalize? Evidence from Cross-Domain Transfer in LLMs',
       datePublished: '2026',
+      sameAs: 'https://arxiv.org/abs/2604.19765',
     },
     {
       '@type': 'ScholarlyArticle',

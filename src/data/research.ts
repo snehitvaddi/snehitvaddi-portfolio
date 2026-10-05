@@ -11,7 +11,7 @@ export interface Publication {
 }
 
 export const SCHOLAR_URL =
-  'https://scholar.google.com/citations?user=2qTPJ8UAAAAJ&hl=en'
+  'https://scholar.google.com/citations?hl=en&user=2qTPJ8UAAAAJ&view_op=list_works&sortby=pubdate'
 
 export const publications: Publication[] = [
   {
@@ -25,6 +25,7 @@ export const publications: Publication[] = [
   },
   {
     id: 'hallucination-neurons',
+    link: 'https://arxiv.org/abs/2604.19765',
     title: 'Do Hallucination Neurons Generalize? Evidence from Cross-Domain Transfer in LLMs',
     venue: 'arXiv',
     year: 2026,

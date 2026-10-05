@@ -32,7 +32,7 @@ export default function Experience() {
             Where I've Worked
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            From building data pipelines at scale to pushing the boundaries of AI research
+            AI tools at Oscar Health, clinical systems at ModMed, and earlier work in data engineering and research.
           </p>
         </motion.div>
 
@@ -100,12 +100,12 @@ export default function Experience() {
                         rel="noopener noreferrer"
                         className="text-blue-600 dark:text-blue-400 hover:underline font-medium inline-flex items-center gap-1"
                       >
-                        {exp.company}
+                        {exp.company}{exp.type === 'contract' ? ' (Contract)' : ''}
                         <ExternalLink className="w-3 h-3" />
                       </a>
                     ) : (
                       <span className="text-gray-700 dark:text-gray-300 font-medium">
-                        {exp.company}
+                        {exp.company}{exp.type === 'contract' ? ' (Contract)' : ''}
                       </span>
                     )}
                     <span className="text-gray-400">•</span>

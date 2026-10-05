@@ -13,6 +13,20 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
   {
+    name: 'Agent Tools & Evaluation',
+    emoji: '🔧',
+    skills: [
+      { name: 'MCP', level: 'advanced', color: 'bg-blue-500' },
+      { name: 'Cube', level: 'advanced', color: 'bg-purple-500' },
+      { name: 'Langfuse', level: 'advanced', color: 'bg-orange-500' },
+      { name: 'LLM-as-Judge', level: 'advanced', color: 'bg-green-500' },
+      { name: 'Codex', level: 'advanced', color: 'bg-gray-700' },
+      { name: 'OAuth2', level: 'advanced', color: 'bg-indigo-500' },
+      { name: 'Prometheus', level: 'advanced', color: 'bg-red-500' },
+      { name: 'PagerDuty', level: 'advanced', color: 'bg-emerald-500' },
+    ],
+  },
+  {
     name: 'GenAI & LLMs',
     emoji: '🤖',
     skills: [
@@ -87,6 +101,6 @@ export const skillCategories: SkillCategory[] = [
 export const stats = [
   { label: 'GitHub Stars', value: '600+', emoji: '⭐' },
   { label: 'Projects', value: '50+', emoji: '🚀' },
-  { label: 'Years Experience', value: '3+', emoji: '💼' },
-  { label: 'Research Papers', value: '2', emoji: '📝' },
+  { label: 'Years Experience', value: '5+', emoji: '💼' },
+  { label: 'Research Papers', value: '5', emoji: '📝' },
 ]

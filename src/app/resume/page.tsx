@@ -5,11 +5,11 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'Resume',
   description:
-    'Resume of Snehit Vaddi — GenAI Engineer building agentic AI and LLM systems for healthcare. Shipped clinical AI to 15,000+ providers.',
+    'Resume of Snehit Vaddi, Forward Deployed AI Engineer at Oscar Health. Code review, claims analytics, contract extraction, and production AI systems.',
   alternates: { canonical: 'https://snehitvaddi.com/resume' },
   openGraph: {
-    title: 'Snehit Vaddi — Resume',
-    description: 'GenAI Engineer · Agentic AI for Healthcare · Production LLM Systems',
+    title: 'Snehit Vaddi | Resume',
+    description: 'Forward Deployed AI Engineer · Oscar Health · Healthcare AI',
     type: 'profile',
     url: 'https://snehitvaddi.com/resume',
   },

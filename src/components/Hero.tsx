@@ -102,16 +102,16 @@ export default function Hero() {
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
               </span>
               <span className="text-sm text-gray-500 dark:text-gray-400">
-                Open for opportunities
+                Forward Deployed AI Engineer at Oscar Health
               </span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
-              AI Engineer who ships products people actually use
+              AI for healthcare teams
             </h1>
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
-              3.5+ years building AI for production
+              5+ years across data engineering, ML, and AI
             </p>
           </motion.div>
 
@@ -140,8 +140,8 @@ export default function Hero() {
           {/* Right Side - Description & CTA */}
           <motion.div variants={itemVariants} className="lg:col-span-1 order-3">
             <p className="text-gray-600 dark:text-gray-400 text-base lg:text-lg mb-8 leading-relaxed">
-              Currently building Agentic AI at ModMed, shipping products that touch millions of patients.
-              From self-driving cars to medical AI to side projects helping thousands land jobs — I build things that work.
+              At Oscar Health, I build tools for code review, claims analytics, and provider contract extraction.
+              Previously at ModMed, I built clinical AI for 15,000+ providers. My research covers LLM reasoning, hallucination detection, and computer vision.
             </p>
 
             <div className="flex flex-wrap gap-4">
